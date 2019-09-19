@@ -3,5 +3,10 @@ package org.fasttrackit;
 public class Rescuer {
 
     String name;
-    long amount;
+    String adress;
+    String city;
+    int age;
+    String animalOwned;
+    boolean hasChildren;
+    long salary;
 }
