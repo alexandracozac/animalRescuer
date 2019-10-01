@@ -25,6 +25,9 @@ public class App
         animal.mood = 8;
         animal.favouriteFood = "Beef Dog Food";
         animal.favouriteActivity = "Ball Play";
+        animal.energyLevel = 8.5;
+        animal.weight = 25;
+        animal.ownerName = "R. Michael";
 
         Rescuer rescuer = new Rescuer();
         rescuer.name = "Mark George";
