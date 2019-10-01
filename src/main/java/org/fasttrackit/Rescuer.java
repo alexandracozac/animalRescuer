@@ -1,9 +1,8 @@
 package org.fasttrackit;
 
-public class Rescuer {
+public class Rescuer extends Human {
 
     String name;
-    String adress;
     String city;
     int age;
     String animalOwned;

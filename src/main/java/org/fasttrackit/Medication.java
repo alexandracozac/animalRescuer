@@ -6,6 +6,6 @@ public class Medication {
     String nameOfDrug;
     String medicationFor;
     String adverseEffects;
-    double doseInGrams;
+    double doseInMg;
     String notRecommendedIf;
 }

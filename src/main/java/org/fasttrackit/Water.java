@@ -2,8 +2,8 @@ package org.fasttrackit;
 
 public class Water {
 
-    int quantity;
-    int remainedQuantity;
+    double quantity;  //litres
+    double remainedQuantity;
     boolean stillEnoughWater;
 
 }

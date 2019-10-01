@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class VetControl {
 
@@ -10,6 +10,6 @@ public class VetControl {
     String diagnosis;
     String medicationName;
     int dose;
-    Date controlDate;
+    LocalDate controlDate;
     boolean hospitalization;
 }
