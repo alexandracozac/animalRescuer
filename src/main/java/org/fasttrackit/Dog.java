@@ -2,8 +2,22 @@ package org.fasttrackit;
 
 public class Dog extends Animal {
 
-    String breed;
-    String allergicTo;
+    private String breed;
+    private String allergicTo;
 
+    public String getBreed() {
+        return breed;
+    }
 
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public String getAllergicTo() {
+        return allergicTo;
+    }
+
+    public void setAllergicTo(String allergicTo) {
+        this.allergicTo = allergicTo;
+    }
 }
