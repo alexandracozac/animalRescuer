@@ -2,31 +2,31 @@ package org.fasttrackit;
 
 public class Game {
 
-    private String Rescuer;
-    private String Animal;
-    private String Vet;
+    private Rescuer rescuer;
+    private Animal animal;
+    private Vet vet;
 
-    public String getRescuer() {
-        return Rescuer;
+    public Rescuer getRescuer() {
+        return rescuer;
     }
 
-    public void setRescuer(String rescuer) {
-        Rescuer = rescuer;
+    public void setRescuer(Rescuer rescuer) {
+        this.rescuer = rescuer;
     }
 
-    public String getAnimal() {
-        return Animal;
+    public Animal getAnimal() {
+        return animal;
     }
 
-    public void setAnimal(String animal) {
-        Animal = animal;
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
 
-    public String getVet() {
-        return Vet;
+    public Vet getVet() {
+        return vet;
     }
 
-    public void setVet(String vet) {
-        Vet = vet;
+    public void setVet(Vet vet) {
+        this.vet = vet;
     }
 }

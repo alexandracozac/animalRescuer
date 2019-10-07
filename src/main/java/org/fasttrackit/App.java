@@ -50,11 +50,11 @@ public class App
 
 
         Activity activity = new Activity();
-        activity.name = "Ball Play";
-        activity.involvedObjects = "Ball";
-        activity.duration = 30;
-        activity.timesPerDay = 2;
-        activity.energyRequired = 3;
+        activity.setName("Ball Play");
+        activity.setInvolvedObjects("Ball");
+        activity.setDuration(30);
+        activity.setTimesPerDay(2);
+        activity.setEnergyRequired(3);
 
         Adoptions adoptions = new Adoptions();
         adoptions.setAdoptionDate(LocalDate.of(2019,9,2));
