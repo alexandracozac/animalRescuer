@@ -38,6 +38,9 @@ public class App
         rescuer.setAnimalOwned("Ginger");
         rescuer.setHasChildren(false);
 
+        rescuer.feed("Lucky", "Purina Beef", 8);
+        rescuer.play("Ginger","ball",7);
+
         AnimalFood animalFood = new AnimalFood();
         animalFood.setName("Purina Lamb Taste");
         animalFood.setPrice(20);
@@ -48,6 +51,8 @@ public class App
         animalFood.setFoodFor("Dogs");
         animalFood.setFoodType("Wet Food");
         animalFood.setRecommendedForAge("2-4");
+
+
 
 
         Activity activity = new Activity();

@@ -9,6 +9,33 @@ public class Rescuer extends Human {
     private boolean hasChildren;
     private long salary;
 
+
+    public void feed(String animalName, String foodName, int hungerSensation) {
+
+        System.out.println(name + " just gave some " + foodName + " food to " + animalName + ".");
+
+        hungerSensation = hungerSensation - 1;
+        System.out.println("Hunger level is now " + hungerSensation + "/10.");
+    }
+
+
+
+    public void play(String animalName, String activityName, int mood) {
+
+        System.out.println(name + " is playing with " + animalName + " " + activityName + " game.");
+
+        mood = mood + 2;
+        System.out.println("Animal mood is rising. This is " + mood + " now.");
+
+
+    }
+
+
+
+
+
+
+
     public Rescuer() {
         this.name = name;
     }
