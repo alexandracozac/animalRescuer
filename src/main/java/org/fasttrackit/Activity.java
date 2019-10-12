@@ -8,6 +8,11 @@ public class Activity {
     private double duration; //in minutes
     private int timesPerDay;
 
+
+    public Activity() {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

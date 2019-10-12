@@ -8,6 +8,12 @@ public class Vet extends Human{
     private String graduatedCollege;
     private String specialty;
 
+
+    public Vet() {
+        this.name = name;
+        this.specialty = specialty;
+    }
+
     public String getName() {
         return name;
     }

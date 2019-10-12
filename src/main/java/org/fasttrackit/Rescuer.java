@@ -9,6 +9,10 @@ public class Rescuer extends Human {
     private boolean hasChildren;
     private long salary;
 
+    public Rescuer() {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

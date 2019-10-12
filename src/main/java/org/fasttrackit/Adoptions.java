@@ -11,6 +11,11 @@ public class Adoptions {
     private String animalType;
     private LocalDate adoptionDate;
 
+    public Adoptions() {
+        this.rescuerName = rescuerName;
+        this.animalName = animalName;
+    }
+
     public String getRescuerName() {
         return rescuerName;
     }

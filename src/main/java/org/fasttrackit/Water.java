@@ -6,6 +6,7 @@ public class Water {
     private double remainedQuantity;
     private boolean stillEnoughWater;
 
+
     public double getQuantity() {
         return quantity;
     }

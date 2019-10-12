@@ -10,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
+
         Vet vet = new Vet();
         vet.setName("L. Travis");
         vet.setSpecialty("Surgery");

@@ -16,6 +16,10 @@ public class AnimalFood {
     private String recommendedForAge;
     private double dose; //in mg
 
+    public AnimalFood() {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

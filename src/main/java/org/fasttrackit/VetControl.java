@@ -13,6 +13,13 @@ public class VetControl {
     private LocalDate controlDate;
     private boolean hospitalization;
 
+    public VetControl() {
+        this.vetName = vetName;
+        this.animalName = animalName;
+        this.diagnosis = diagnosis;
+        this.medicationName = medicationName;
+    }
+
     public String getVetName() {
         return vetName;
     }

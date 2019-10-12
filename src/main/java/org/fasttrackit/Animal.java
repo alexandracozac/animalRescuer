@@ -13,6 +13,10 @@ public class Animal {
     private double weight; // in kg
     private String ownerName;
 
+    public Animal() {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
