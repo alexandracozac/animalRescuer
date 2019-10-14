@@ -13,7 +13,7 @@ public class VetControl {
     private LocalDate controlDate;
     private boolean hospitalization;
 
-    public VetControl() {
+    public VetControl(String vetName, String animalName, String diagnosis, String medicationName) {
         this.vetName = vetName;
         this.animalName = animalName;
         this.diagnosis = diagnosis;

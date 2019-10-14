@@ -5,6 +5,10 @@ public class Bird extends Animal {
     private String birdType;
     private boolean canFly;
 
+    public Bird(String name) {
+        super(name);
+    }
+
     public String getBirdType() {
         return birdType;
     }

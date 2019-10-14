@@ -9,7 +9,7 @@ public class Medication {
     private double doseInMg;
     private String notRecommendedIf;
 
-    public Medication() {
+    public Medication(String nameOfDrug, String adverseEffects) {
         this.nameOfDrug = nameOfDrug;
         this.adverseEffects = adverseEffects;
     }

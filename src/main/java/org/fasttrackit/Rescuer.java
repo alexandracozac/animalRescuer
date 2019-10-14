@@ -31,12 +31,7 @@ public class Rescuer extends Human {
     }
 
 
-
-
-
-
-
-    public Rescuer() {
+    public Rescuer(String name) {
         this.name = name;
     }
 

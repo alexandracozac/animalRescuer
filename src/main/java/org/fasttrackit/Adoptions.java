@@ -11,9 +11,8 @@ public class Adoptions {
     private String animalType;
     private LocalDate adoptionDate;
 
-    public Adoptions() {
+    public Adoptions(String rescuerName) {
         this.rescuerName = rescuerName;
-        this.animalName = animalName;
     }
 
     public String getRescuerName() {

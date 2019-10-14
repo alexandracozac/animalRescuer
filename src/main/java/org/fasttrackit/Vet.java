@@ -9,10 +9,11 @@ public class Vet extends Human{
     private String specialty;
 
 
-    public Vet() {
+    public Vet (String name, String specialty) {
         this.name = name;
         this.specialty = specialty;
     }
+
 
     public String getName() {
         return name;

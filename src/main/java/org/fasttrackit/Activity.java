@@ -8,8 +8,7 @@ public class Activity {
     private double duration; //in minutes
     private int timesPerDay;
 
-
-    public Activity() {
+    public Activity(String name) {
         this.name = name;
     }
 

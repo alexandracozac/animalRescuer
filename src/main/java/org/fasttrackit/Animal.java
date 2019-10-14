@@ -13,7 +13,7 @@ public class Animal {
     private double weight; // in kg
     private String ownerName;
 
-    public Animal() {
+    public Animal(String name) {
         this.name = name;
     }
 

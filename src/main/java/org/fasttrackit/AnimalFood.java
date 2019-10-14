@@ -16,7 +16,7 @@ public class AnimalFood {
     private String recommendedForAge;
     private double dose; //in mg
 
-    public AnimalFood() {
+    public AnimalFood(String name) {
         this.name = name;
     }
 
