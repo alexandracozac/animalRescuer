@@ -24,22 +24,21 @@ public class App
         animal.setHealthRange(8);
         animal.setHungerSensation(5);
         animal.setMood(8);
-        animal.setFavouriteFood("Beef Dog Food");
+        animal.setFavouriteFood("Purina Lamb Taste");
         animal.setFavouriteActivity("Ball Play");
         animal.setEnergyLevel(8.5);
         animal.setWeight(25);
         animal.setOwnerName("R. Michael");
 
+
         Rescuer rescuer = new Rescuer("Mark George");
         rescuer.setName("Mark George");
-        rescuer.setSalary(2500);
+        rescuer.setMoney(2500);
         rescuer.setAge(25);
         rescuer.setCity("London");
         rescuer.setAnimalOwned("Ginger");
         rescuer.setHasChildren(false);
 
-        rescuer.feed("Lucky", "Purina Beef", 8);
-        rescuer.play("Ginger","ball",7);
 
         AnimalFood animalFood = new AnimalFood("Purina Lamb Taste");
         animalFood.setName("Purina Lamb Taste");
@@ -102,6 +101,11 @@ public class App
         human.setHairColor("black");
         human.setGender("male");
         human.setNationality("british");
+
+        rescuer.feed(animal, animalFood);
+        rescuer.play(animal, activity);
+
+
 
         //System.out.println("My new dog is " + animal.getName() + ".");
 

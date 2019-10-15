@@ -7,25 +7,38 @@ public class Rescuer extends Human {
     private int age;
     private String animalOwned;
     private boolean hasChildren;
-    private long salary;
+    private int money;
 
 
-    public void feed(String animalName, String foodName, int hungerSensation) {
+    public void feed(Animal animal, AnimalFood animalFood ) {
 
-        System.out.println(name + " just gave some " + foodName + " food to " + animalName + ".");
+        System.out.println("Hunger level of " + animal.getName() + " is now " + animal.getHungerSensation() + " /10.");
 
-        hungerSensation = hungerSensation - 1;
-        System.out.println("Hunger level is now " + hungerSensation + "/10.");
-    }
+        System.out.println(getName() + " just gave some " + animalFood.getName() + " food to " + animal.getName() + ".");
+
+           if (animalFood.getName().equals(animal.getFavouriteFood())) {
+
+               animal.setHungerSensation(animal.getHungerSensation() - 1);
+
+           } System.out.println("Hunger lever changed and it is " + animal.getHungerSensation() + " /10.");
+       }
 
 
+    public void play(Animal animal, Activity activity) {
 
-    public void play(String animalName, String activityName, int mood) {
+        System.out.println("Mood of " + animal.getName() + " is now " + animal.getMood() + " /10.");
 
-        System.out.println(name + " is playing with " + animalName + " " + activityName + " game.");
+        System.out.println(getName() + " is playing with " + animal.getName() + " " + activity.getName() + " game.");
+        System.out.println(animal.getName() + "'s favourite activity is " + animal.getFavouriteActivity() + ".");
 
-        mood = mood + 2;
-        System.out.println("Animal mood is rising. This is " + mood + " now.");
+        if(activity.getName().equals(animal.getFavouriteActivity())) {
+
+            animal.setMood(animal.getMood() + 1);
+
+            System.out.println(animal.getName() + "'s mood is increasing and it is " + animal.getMood() + " /10.");
+        }
+        else System.out.println(animal.getName() + "'s mood hasn't changed and it is " + animal.getMood() + ".");
+
 
 
     }
@@ -75,11 +88,11 @@ public class Rescuer extends Human {
         this.hasChildren = hasChildren;
     }
 
-    public long getSalary() {
-        return salary;
+    public long getMoney() {
+        return money;
     }
 
-    public void setSalary(long salary) {
-        this.salary = salary;
+    public void setMoney(int money) {
+        this.money = money;
     }
 }
