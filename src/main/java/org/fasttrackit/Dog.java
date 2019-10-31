@@ -5,6 +5,11 @@ public class Dog extends Animal {
     private String breed;
     private String allergicTo;
 
+    @Override
+    public void positiveMood() {
+        System.out.println("Dog is wagging his tail!");
+    }
+
     public Dog(String name) {
         super(name);
     }
@@ -24,4 +29,6 @@ public class Dog extends Animal {
     public void setAllergicTo(String allergicTo) {
         this.allergicTo = allergicTo;
     }
+
+
 }

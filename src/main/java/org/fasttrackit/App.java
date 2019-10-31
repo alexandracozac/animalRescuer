@@ -106,6 +106,10 @@ public class App
         rescuer.play(animal, activity);
 
 
+        dog.positiveMood();
+        bird.positiveMood();
+
+
 
         //System.out.println("My new dog is " + animal.getName() + ".");
 

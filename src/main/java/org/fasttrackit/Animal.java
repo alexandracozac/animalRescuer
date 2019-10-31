@@ -13,6 +13,11 @@ public class Animal {
     private double weight; // in kg
     private String ownerName;
 
+    public void positiveMood() {
+        System.out.println("The animal is happy!");
+    }
+
+
     public Animal(String name) {
         this.name = name;
     }

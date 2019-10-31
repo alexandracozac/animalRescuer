@@ -5,6 +5,11 @@ public class Bird extends Animal {
     private String birdType;
     private boolean canFly;
 
+    @Override
+    public void positiveMood() {
+        System.out.println("Bird sings!");
+    }
+
     public Bird(String name) {
         super(name);
     }
@@ -24,4 +29,6 @@ public class Bird extends Animal {
     public void setCanFly(boolean canFly) {
         this.canFly = canFly;
     }
+
+
 }
