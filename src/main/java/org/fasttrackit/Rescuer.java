@@ -14,7 +14,7 @@ public class Rescuer extends Human {
 
         System.out.println("Hunger level of " + animal.getName() + " is now " + animal.getHungerSensation() + " /10.");
 
-        System.out.println(getName() + " just gave some " + animalFood.getName() + " food to " + animal.getName() + ".");
+        //System.out.println(getName() + " just gave some " + animalFood.getName() + " food to " + animal.getName() + ".");
 
            if (animalFood.getName().equals(animal.getFavouriteFood())) {
 
@@ -28,8 +28,8 @@ public class Rescuer extends Human {
 
         System.out.println("Mood of " + animal.getName() + " is now " + animal.getMood() + " /10.");
 
-        System.out.println(getName() + " is playing with " + animal.getName() + " " + activity.getName() + " game.");
-        System.out.println(animal.getName() + "'s favourite activity is " + animal.getFavouriteActivity() + ".");
+        //System.out.println(getName() + " is playing with " + animal.getName() + " " + activity.getName() + " game.");
+        //System.out.println(animal.getName() + "'s favourite activity is " + animal.getFavouriteActivity() + ".");
 
         if(activity.getName().equals(animal.getFavouriteActivity())) {
 
