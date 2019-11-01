@@ -23,7 +23,7 @@ public class App
         animal.setAge(1);
         animal.setHealthRange(8);
         animal.setHungerSensation(5);
-        animal.setMood(8);
+        animal.setMood(6);
         animal.setFavouriteFood("Purina Lamb Taste");
         animal.setFavouriteActivity("Ball Play");
         animal.setEnergyLevel(8.5);
@@ -102,9 +102,8 @@ public class App
         human.setGender("male");
         human.setNationality("british");
 
-        rescuer.feed(animal, animalFood);
+        //rescuer.feed(animal, animalFood);
         rescuer.play(animal, activity);
-
 
         dog.positiveMood();
         bird.positiveMood();

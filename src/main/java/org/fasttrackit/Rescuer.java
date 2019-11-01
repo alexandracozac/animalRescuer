@@ -12,32 +12,36 @@ public class Rescuer extends Human {
 
     public void feed(Animal animal, AnimalFood animalFood ) {
 
-        System.out.println("Hunger level of " + animal.getName() + " is now " + animal.getHungerSensation() + " /10.");
-
+        //System.out.println("Hunger level of " + animal.getName() + " is now " + animal.getHungerSensation() + " /10.");
         //System.out.println(getName() + " just gave some " + animalFood.getName() + " food to " + animal.getName() + ".");
 
+        System.out.println(animal.getName() + "'s mood before eating his favourite food is " + animal.getMood() + ".");
            if (animalFood.getName().equals(animal.getFavouriteFood())) {
 
-               animal.setHungerSensation(animal.getHungerSensation() - 1);
+               animal.setMood(animal.getMood() + 1);
 
-           } System.out.println("Hunger lever changed and it is " + animal.getHungerSensation() + " /10.");
+           } //System.out.println("Hunger lever changed and it is " + animal.getHungerSensation() + " /10.");
+        System.out.println(animal.getName() + "'s mood after feeding his favourite food is now " + animal.getMood());
        }
 
 
     public void play(Animal animal, Activity activity) {
 
-        System.out.println("Mood of " + animal.getName() + " is now " + animal.getMood() + " /10.");
+        System.out.println("Mood of " + animal.getName() + " before playing games is " + animal.getMood() + " /10.");
 
         //System.out.println(getName() + " is playing with " + animal.getName() + " " + activity.getName() + " game.");
         //System.out.println(animal.getName() + "'s favourite activity is " + animal.getFavouriteActivity() + ".");
 
-        if(activity.getName().equals(animal.getFavouriteActivity())) {
+        if (activity.getName().equals(animal.getFavouriteActivity())) {
 
+            animal.setMood(animal.getMood() + 2);
+            System.out.println(animal.getName() + " is playing his favourite activity and his mood is " + animal.getMood() + " /10.");
+
+        } else {
             animal.setMood(animal.getMood() + 1);
-
-            System.out.println(animal.getName() + "'s mood is increasing and it is " + animal.getMood() + " /10.");
+            System.out.println(animal.getName() + "'s mood when playing an ordinary game is " + animal.getMood() + " /10.");
         }
-        else System.out.println(animal.getName() + "'s mood hasn't changed and it is " + animal.getMood() + ".");
+
 
 
 
