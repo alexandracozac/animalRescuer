@@ -105,6 +105,7 @@ public class App
         //rescuer.feed(animal, animalFood);
         rescuer.play(animal, activity);
 
+        //animal.positiveMood();
         dog.positiveMood();
         bird.positiveMood();
 

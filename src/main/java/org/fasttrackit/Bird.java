@@ -7,7 +7,7 @@ public class Bird extends Animal {
 
     @Override
     public void positiveMood() {
-        System.out.println("Bird sings!");
+        System.out.println(getName() + " sings!");
     }
 
     public Bird(String name) {

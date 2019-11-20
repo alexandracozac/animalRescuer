@@ -5,9 +5,10 @@ public class Dog extends Animal {
     private String breed;
     private String allergicTo;
 
+
     @Override
     public void positiveMood() {
-        System.out.println("Dog is wagging his tail!");
+        System.out.println(getName() + " is wagging his/her tail! ");
     }
 
     public Dog(String name) {
